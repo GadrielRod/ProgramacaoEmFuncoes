@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1679063639 source:c:\users\uchih\documents\programacoesemfuncoesemc\bhaskaraemfunções\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
