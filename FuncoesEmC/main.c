@@ -28,8 +28,8 @@ int main( void )
         printf("\n O delta é: %.2f", delta);
     }else{
         printf("\n O delta é: %.2f", delta);
-        x1 = (- b + (sqrt(delta))) / 2 * a;
-        x2 = (- b - (sqrt(delta))) / 2 * a;
+        x1 = (- b + (sqrt(delta))) / (2 * a);
+        x2 = (- b - (sqrt(delta))) / (2 * a);
         printf("\n X1: %.2f",x1);
         printf("\n X2: %.2f",x2);
 
