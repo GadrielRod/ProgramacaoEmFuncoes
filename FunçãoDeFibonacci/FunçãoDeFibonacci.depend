@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
-1680569772 source:c:\users\uchih\documents\programacoesemfuncoesemc\funçãodefibonacci\main.c
+1681335132 source:c:\users\uchih\documents\programacoesemfuncoesemc\funçãodefibonacci\main.c
 	<stdio.h>
+	<windows.h>
+	<time.h>
 
