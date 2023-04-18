@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1681823512 source:c:\users\uchih\documents\programacoesemfuncoesemc\operacoesmatematicas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<locale.h>
+	<windows.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1681343648 source:c:\users\uchih\documents\programacoesemfuncoesemc\escopos\main.c
+	<stdio.h>
+	<stdlib.h>
+
