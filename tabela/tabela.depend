@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1681947783 source:c:\users\uchih\documents\programacoesemfuncoesemc\tabela\main.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	<locale.h>
+
