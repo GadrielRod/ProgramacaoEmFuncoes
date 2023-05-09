@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1683605225 source:c:\users\uchih\documents\programacoesemfuncoesemc\arraymaximo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
+
