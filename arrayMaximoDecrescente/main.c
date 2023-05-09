@@ -3,12 +3,12 @@
 #include <locale.h>
 #include <time.h>
 
-void ordemDecrescente(int array[], int size);
+void ordemDecrescente(int array[], int size);//prototipo da função ordemDecrescente
 
 
 int main()
 {
-    system("color 02");
+    system("color 05");//aqui determinei as cores para fundo preto e fonte roxa
 
     setlocale(LC_ALL, "Portuguese");
     //variaveis "size" o tamanho do array, "i" e "j" contadores
@@ -21,7 +21,7 @@ int main()
     {
         printf("Digite o tamanho máximo de o a 100: ");
         scanf("%d", &size);
-        system("cls");
+        system("cls");//limpa a tela
 
         if(size <= 0 || size > 100)
         {
@@ -41,7 +41,10 @@ int main()
         //ao usar rand() % algum valor, o resultadod será um número inteiro aleatório, nesse caso de 0 a 25, por isso 26
         array[i] = rand() % 26;
         printf( "%7d%13d", i, array[i]);
-
+        printf("\033[8C");
+//para evitar de o '*' ficar colado no valor adicionei
+//esse controlador ANSI que serve para coisas como exibir cores, limpar tela e posicionar o cursor,
+//nesse caso posicionei o cursor tantas colunas para direita
         for(j = 1; j <= array[i]; j++)
         {
             printf( "%c", '*' );
@@ -50,15 +53,14 @@ int main()
         printf( "\n" );
 
     }
-
     printf("\nArray em ordem decrescente:\n");
-    ordemDecrescente(array, size);
-    printf( "%s%13s%17s\n", "Elemento", "Valor", "Histograma");
+    ordemDecrescente(array, size);//aqui chamo a função para ordenar em ordem decrescente
+    printf( "\n%s%13s%17s\n", "Elemento", "Valor", "Histograma");
     for(i = 0; i < size; i++)
     {
         //ao usar rand() % algum valor, o resultadod será um número inteiro aleatório, nesse caso de 0 a 25, por isso 26
         printf( "%7d%13d", i, array[i]);
-
+        printf("\033[8C");
         for(j = 1; j <= array[i]; j++)
         {
             printf( "%c", '*' );
@@ -76,15 +78,15 @@ int main()
 
 void ordemDecrescente(int array[], int size)
 {
-    for(int i = 0; i < size - 1; i++)
+    for(int i = 0; i < size - 1; i++)//loop externo itera sobre cada elemento do array, exceto o ultimo
     {
-        for(int j = i + 1; j < size; j++)
+        for(int j = i + 1; j < size; j++)//loop interno itera sobre os elementos restantes do array, a partir da posição i + 1
         {
-            if(array[j] > array[i])
+            if(array[j] > array[i])//verifica se 'j' é maior que o elemento na posição 'i', e se sim realiza a troca
             {
-                int hold = array[i];
-                array[i] = array[j];
-                array[j] = hold;
+                int hold = array[i];//armazena os valores do elemento 'i' na variável hold
+                array[i] = array[j];//atribui o valor do elemento 'j' à posição 'i'
+                array[j] = hold;//por fim atribui o valor de hold à posição 'j', trocando os elemento corretamente
             }
         }
     }
