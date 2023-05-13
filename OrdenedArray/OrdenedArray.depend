@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1683776559 source:c:\users\uchih\documents\programacoesemfuncoesemc\ordenedarray\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
