@@ -39,7 +39,7 @@ int main()
         {
             //ao usar rand() % algum valor, o resultadod será um número inteiro aleatório, nesse caso de 0 a 25, por isso 26
             array[i] = rand() % 26;
-            printf( "%7d%13d", i, array[i]);
+            printf( "%7d%13d", i + 1, array[i]);
             printf("\033[8C");//o controlador ASNI serve para posicionar o cursor 8 colunas para a direira, nesse caso em especifico
             for(j = 1; j <= array[i]; j++)
             {
